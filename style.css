@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root{
+/* # Primary */
+    --Blue: hsl(246, 80%, 60%);
+    --Light-orange : hsl(15, 100%, 70%); /*Work*/
+    --Soft-blue: hsl(195, 74%, 62%); /*Play*/
+    --Light-red: hsl(348, 100%, 68%); /*Study*/
+    --green: hsl(145, 58%, 55%);/*Excercise*/
+    --Violet: hsl(264, 64%, 52%); /*Social*/
+    --Soft-orange : hsl(43, 84%, 65%); /*(self care)*/
+/* # Neutral */
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%) ;
+    --k: #259be2
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Rubik";
+    background-color:var(--Very-dark-blue);
+    font-size: 18px;
+}
+.main{
+    display:grid;
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-rows: repeat(7,1fr);
+    padding-top: 80px;
+}
+.main>div{
+    grid-column:2/3;
+}
+.card-front{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:var(--k);  
+    grid-row: 1/2;
+    padding:1.5rem;
+}
+.card-front,.card-back{
+    margin-bottom: 1rem;    
+}
+.card-front img{
+    grid-row-end:2;
+    border:3px solid white;
+    border-radius: 50%;
+    width:72px;
+    font-weight: 300;
+    margin-right: 1rem;
+}
+.card-front p{
+    color:var(--Pale-Blue);
+    font-size: 1rem;
+}
+h1{
+    color:white;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.card-back{
+    background-color:var(--Dark-blue);
+    grid-column:2/3;
+    grid-row: 1/2;
+    align-content: flex-end;
+}
+.card-back ul{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 160px;
+}
+.card-back li{
+    display: inline-block; 
+}
+.card-back a{
+    text-decoration: none;
+    color:var(--Pale-Blue)
+}
+.work-back{
+    background-color:var(--Light-orange);
+    grid-row: 2/3;
+}
+.work-front{
+    grid-row: 2/3;
+}
+.play-back{
+    background-color: var(--Soft-blue);
+    grid-row: 3/4;
+}
+.play-front{
+    background-color: var(--Soft-blue);
+    grid-row: 3/4;
+}
+.study-back{
+    background-color:var(--Light-red);
+    grid-row: 4/5;
+}
+.study-front{
+    grid-row: 4/5;
+}
+.excercise-back{
+    background-color:var(--green);
+    grid-row: 5/6;
+}
+.excercise-front{
+    grid-row: 5/6;
+}
+.social-back{
+    background-color:var(--Violet);
+    grid-row: 6/7;
+}
+.social-front{
+    grid-row:6/7;
+}
+.self-care-back{
+    background-color: var(--Soft-orange);
+    grid-row: 7/8;
+}
+.self-care-front{
+    grid-row:7/8;
+}
+.front,.back,.card-front,.card-back{
+    border-radius: 1.5rem;
+}
+.front .right-top, .front .right-bottom{
+    color:white;
+}
+.front{
+    background-color: var(--Dark-blue);
+    height:60%;
+    align-self: end;
+    padding: 1rem;
+}
+.back{
+    margin-bottom: 20px;
+    position: relative;
+    z-index: -1;
+
+
+}
+.back img{
+    position:absolute;
+    top:0;
+    right:1rem;
+    width:80px;
+}
+.card-front{
+    height: 133px;
+    align-self: start;
+}
+.card-back{
+    height:204px;
+    align-self:end;
+    z-index:-1;
+}
+.left{
+    float:left;
+}
+.right{
+    font-size: smaller;
+    float:right;}
+.front img{
+width: 40px;}
+.front{
+    overflow-y: hidden;
+}
+.front,.back{
+    margin-bottom: 20px;
+}
+.left-top,.left-bottom{
+    color:white
+}
