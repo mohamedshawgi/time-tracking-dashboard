@@ -7,7 +7,7 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
-## Colors
+<!-- ## Colors
 
 ### Primary
 
@@ -25,7 +25,7 @@ The designs were created to the following widths:
 - Very dark blue: hsl(226, 43%, 10%)
 - Dark blue: hsl(235, 46%, 20%)
 - Desaturated blue: hsl(235, 45%, 61%)
-- Pale Blue: hsl(236, 100%, 87%)
+- Pale Blue: hsl(236, 100%, 87%) -->
 
 ## Typography
 
@@ -33,7 +33,7 @@ The designs were created to the following widths:
 
 - Font size: 18px (card titles e.g. Work, Play)
 
-### Font
+<!-- ### Font
 
 - Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 300, 400, 500
+- Weights: 300, 400, 500 -->
